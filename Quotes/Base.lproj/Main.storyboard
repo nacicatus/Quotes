@@ -674,6 +674,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="previous:" target="XfG-lQ-9wD" id="Glp-K2-QTh"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rfY-GU-f7u">
                                 <rect key="frame" x="421" y="117" width="45" height="32"/>
@@ -681,6 +684,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="next:" target="XfG-lQ-9wD" id="beM-8K-ky5"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="XuI-IO-3JX">
                                 <rect key="frame" x="71" y="126" width="338" height="17"/>
@@ -696,6 +702,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="quit:" target="XfG-lQ-9wD" id="msj-9r-InZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -711,6 +720,9 @@
                             <constraint firstItem="XuI-IO-3JX" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="itK-b1-4hu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="XuI-IO-3JX" id="0sh-7W-KEK"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

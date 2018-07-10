@@ -15,6 +15,11 @@ class QuotesViewController: NSViewController {
         // Do view setup here.
     }
     
+    @IBOutlet weak var textLabel: NSTextField!
+    
+    
+    
+    
 }
 
 extension QuotesViewController {
@@ -26,5 +31,20 @@ extension QuotesViewController {
             fatalError("Can't find view controller - Check Main.storyboard")
         }
         return viewcontroller
+    }
+}
+
+// MARK: Actions
+extension QuotesViewController {
+    @IBAction func previous(_ sender: NSButton) {
+        
+    }
+    
+    @IBAction func next(_ sender: NSButton) {
+        
+    }
+    
+    @IBAction func quit(_ sender: NSButton) {
+    
     }
 }
