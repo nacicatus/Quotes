@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		307820D820F4952100B6DC0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307820D720F4952100B6DC0B /* AppDelegate.swift */; };
-		307820DA20F4952100B6DC0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307820D920F4952100B6DC0B /* ViewController.swift */; };
 		307820DC20F4952100B6DC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307820DB20F4952100B6DC0B /* Assets.xcassets */; };
 		307820DF20F4952100B6DC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307820DD20F4952100B6DC0B /* Main.storyboard */; };
 		307820E720F4A9EE00B6DC0B /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307820E620F4A9EE00B6DC0B /* QuotesViewController.swift */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		307820D420F4952100B6DC0B /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		307820D720F4952100B6DC0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		307820D920F4952100B6DC0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		307820DB20F4952100B6DC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307820DE20F4952100B6DC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		307820E020F4952100B6DC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				307820E620F4A9EE00B6DC0B /* QuotesViewController.swift */,
 				307820E820F4AEC200B6DC0B /* Quote.swift */,
 				307820EA20F4C29100B6DC0B /* EventMonitor.swift */,
-				307820D920F4952100B6DC0B /* ViewController.swift */,
 				307820DB20F4952100B6DC0B /* Assets.xcassets */,
 				307820DD20F4952100B6DC0B /* Main.storyboard */,
 				307820E020F4952100B6DC0B /* Info.plist */,
@@ -143,7 +140,6 @@
 			files = (
 				307820E920F4AEC200B6DC0B /* Quote.swift in Sources */,
 				307820EB20F4C29100B6DC0B /* EventMonitor.swift in Sources */,
-				307820DA20F4952100B6DC0B /* ViewController.swift in Sources */,
 				307820E720F4A9EE00B6DC0B /* QuotesViewController.swift in Sources */,
 				307820D820F4952100B6DC0B /* AppDelegate.swift in Sources */,
 			);
