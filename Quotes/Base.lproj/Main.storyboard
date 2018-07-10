@@ -689,8 +689,11 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="XuI-IO-3JX">
-                                <rect key="frame" x="71" y="126" width="338" height="17"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="multil" id="CI5-sh-seS">
+                                <rect key="frame" x="71" y="99" width="338" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="GVL-j6-mAk"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="multiline label" id="CI5-sh-seS">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -708,16 +711,15 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="rfY-GU-f7u" firstAttribute="leading" secondItem="XuI-IO-3JX" secondAttribute="trailing" constant="20" id="0Ek-VO-qOF"/>
                             <constraint firstItem="ZMg-wj-ied" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="5Nw-uJ-uIW"/>
-                            <constraint firstItem="XuI-IO-3JX" firstAttribute="leading" secondItem="ZMg-wj-ied" secondAttribute="trailing" constant="20" id="7jn-WR-p89"/>
                             <constraint firstItem="K4r-PI-8Ef" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="9Y5-u3-4pv"/>
                             <constraint firstAttribute="bottom" secondItem="K4r-PI-8Ef" secondAttribute="bottom" constant="20" id="BE1-IL-2d4"/>
-                            <constraint firstItem="XuI-IO-3JX" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="SGW-Tl-K8U"/>
                             <constraint firstItem="ZMg-wj-ied" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="VE7-w7-fjd"/>
                             <constraint firstAttribute="trailing" secondItem="rfY-GU-f7u" secondAttribute="trailing" constant="20" id="XlA-PM-7wo"/>
+                            <constraint firstItem="XuI-IO-3JX" firstAttribute="centerX" secondItem="K4r-PI-8Ef" secondAttribute="centerX" id="b3Q-7d-wvA"/>
                             <constraint firstItem="rfY-GU-f7u" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="hit-EO-Bho"/>
-                            <constraint firstItem="XuI-IO-3JX" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="itK-b1-4hu"/>
+                            <constraint firstItem="K4r-PI-8Ef" firstAttribute="top" secondItem="XuI-IO-3JX" secondAttribute="bottom" constant="58" id="pHo-3o-gjo"/>
+                            <constraint firstItem="XuI-IO-3JX" firstAttribute="leading" secondItem="ZMg-wj-ied" secondAttribute="trailing" constant="20" id="uYl-uD-NPT"/>
                         </constraints>
                     </view>
                     <connections>
