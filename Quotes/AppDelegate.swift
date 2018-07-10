@@ -21,15 +21,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         if let button = statusItem.button {
             button.image = NSImage(named: "menu-bar-icon")
-            button.action = #selector(togglePopover(_:))
+            button.action = #selector(statusBarButtonClicked(sender:))
+            button.sendAction(on: [NSEventMask.leftMouseUp, NSEventMask.rightMouseUp])
         }
-        popover.contentViewController = QuotesViewController.freshController()
         
+        popover.contentViewController = QuotesViewController.freshController()
         
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             if let strongSelf = self, strongSelf.popover.isShown {
                 strongSelf.closePopover(sender: event)
             }
+            
         }
     }
     
@@ -45,14 +47,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    @objc func statusBarButtonClicked(sender: NSStatusBarButton) {
+        let event = NSApp.currentEvent!
+        if event.type == NSEventType.rightMouseUp {
+            constructMenu()
+        } else {
+            togglePopover(sender)
+        }
+    }
     
-    //    @objc func printQuote(_ sender: Any?) {
-    //        let quoteText = "Today is a good day to die"
-    //        let quoteAuthor = "Worf"
-    //
-    //        print("\(quoteText) - \(quoteAuthor)")
-    //    }
-    
+
     
     func showPopover(sender: Any?) {
         if let button = statusItem.button {
@@ -67,14 +71,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     
-    //    func constructMenu() {
-    //        let menu = NSMenu()
-    //        menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(AppDelegate.printQuote(_:)), keyEquivalent: "P"))
-    //        menu.addItem(NSMenuItem.separator())
-    //        menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-    //
-    //        statusItem.menu = menu
-    //    }
+        func constructMenu() {
+            let menu = NSMenu()
+            menu.addItem(NSMenuItem(title: "Window", action: #selector(AppDelegate.showPopover(sender:)), keyEquivalent: "W"))
+            menu.addItem(NSMenuItem.separator())
+            menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+    
+            statusItem.menu = menu
+        }
     
 }
 
