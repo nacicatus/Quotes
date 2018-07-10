@@ -12,6 +12,7 @@
 		307820DC20F4952100B6DC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307820DB20F4952100B6DC0B /* Assets.xcassets */; };
 		307820DF20F4952100B6DC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307820DD20F4952100B6DC0B /* Main.storyboard */; };
 		307820E720F4A9EE00B6DC0B /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307820E620F4A9EE00B6DC0B /* QuotesViewController.swift */; };
+		307820E920F4AEC200B6DC0B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307820E820F4AEC200B6DC0B /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		307820DE20F4952100B6DC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		307820E020F4952100B6DC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		307820E620F4A9EE00B6DC0B /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		307820E820F4AEC200B6DC0B /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				307820D720F4952100B6DC0B /* AppDelegate.swift */,
 				307820E620F4A9EE00B6DC0B /* QuotesViewController.swift */,
+				307820E820F4AEC200B6DC0B /* Quote.swift */,
 				307820D920F4952100B6DC0B /* ViewController.swift */,
 				307820DB20F4952100B6DC0B /* Assets.xcassets */,
 				307820DD20F4952100B6DC0B /* Main.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307820E920F4AEC200B6DC0B /* Quote.swift in Sources */,
 				307820DA20F4952100B6DC0B /* ViewController.swift in Sources */,
 				307820E720F4A9EE00B6DC0B /* QuotesViewController.swift in Sources */,
 				307820D820F4952100B6DC0B /* AppDelegate.swift in Sources */,
@@ -290,6 +294,7 @@
 				307820E520F4952100B6DC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

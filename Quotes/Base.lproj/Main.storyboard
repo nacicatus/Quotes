@@ -667,6 +667,49 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-wj-ied">
+                                <rect key="frame" x="14" y="117" width="45" height="32"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoLeftTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gEq-mY-gPo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rfY-GU-f7u">
+                                <rect key="frame" x="421" y="117" width="45" height="32"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoRightTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L9d-bf-jDp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="XuI-IO-3JX">
+                                <rect key="frame" x="71" y="126" width="338" height="17"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="multil" id="CI5-sh-seS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-PI-8Ef">
+                                <rect key="frame" x="207" y="13" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cao-65-N5z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rfY-GU-f7u" firstAttribute="leading" secondItem="XuI-IO-3JX" secondAttribute="trailing" constant="20" id="0Ek-VO-qOF"/>
+                            <constraint firstItem="ZMg-wj-ied" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="5Nw-uJ-uIW"/>
+                            <constraint firstItem="XuI-IO-3JX" firstAttribute="leading" secondItem="ZMg-wj-ied" secondAttribute="trailing" constant="20" id="7jn-WR-p89"/>
+                            <constraint firstItem="K4r-PI-8Ef" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="9Y5-u3-4pv"/>
+                            <constraint firstAttribute="bottom" secondItem="K4r-PI-8Ef" secondAttribute="bottom" constant="20" id="BE1-IL-2d4"/>
+                            <constraint firstItem="XuI-IO-3JX" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="SGW-Tl-K8U"/>
+                            <constraint firstItem="ZMg-wj-ied" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="VE7-w7-fjd"/>
+                            <constraint firstAttribute="trailing" secondItem="rfY-GU-f7u" secondAttribute="trailing" constant="20" id="XlA-PM-7wo"/>
+                            <constraint firstItem="rfY-GU-f7u" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="hit-EO-Bho"/>
+                            <constraint firstItem="XuI-IO-3JX" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="itK-b1-4hu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -674,4 +717,8 @@
             <point key="canvasLocation" x="106" y="221"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+    </resources>
 </document>
